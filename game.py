@@ -13,7 +13,7 @@ SCREEN_WIDTH = 1400
 SCREEN_HEIGHT = 740
 root = tk.Tk()
 root.geometry(str(SCREEN_WIDTH)+"x"+str(SCREEN_HEIGHT))
-root.title('Group 13 - Game Pro')
+root.title('Advanture OF Prince')
 canvas = tk.Canvas(root)
 
 # ---------------------------------------------------------------------------
@@ -27,7 +27,8 @@ game_introduction=tk.PhotoImage(file='image/introduction')
 game_story=tk.PhotoImage(file='image/story.jpg')
 
 all_levels=tk.PhotoImage(file='image/all-level.png')
-help=tk.PhotoImage(file='image/help.png')
+button_help=tk.PhotoImage(file='image/help.png')
+button_play=tk.PhotoImage(file='image/star-play.png')
 level1_list=tk.PhotoImage(file='image/level1-list.jpg')
 level2_list=tk.PhotoImage(file='image/level2-list.jpg')
 level3_list=tk.PhotoImage(file='image/level3-list.jpg')
@@ -46,6 +47,42 @@ white_stone=tk.PhotoImage(file='image/white-stone.png')
 long_wall=tk.PhotoImage(file='image/long-wall.jpg')
 small_wall=tk.PhotoImage(file='image/short-wall.jpg')
 monster=tk.PhotoImage(file='image/monster.png')
+fire=tk.PhotoImage(file='image/fire.png')
+
+
+
+#=========================== ALL LEVELS =======================
+
+def level1(event):
+    canvas.delete("all")
+    global player
+    # =============   GRASS IMAGES =========
+
+    # ==================  DOOR  ===============
+
+    # ==================  WHITE-STONE IMAGES ===============
+
+    # ==================  BLACK-STONE IMAGES ===============
+
+    # ==================  YELLOW-STONE IMAGES ===============
+ 
+    # ==================  WATER IMAGE ===============
+
+    # ==================  MONSTER IMAGE ===============
+
+    # ==================  LONG STONE IMAGE ===============
+
+    # ==================  SHORT STONE IMAGE ===============
+
+    # ==================  PLAYER ===============
+    
+# def level2(event):
+#     canvas.create_image(1, 0, image=summer_bg, anchor="nw")
+#     canvas.create_image(25, 10, image=back_img, anchor="nw", tags="back_all_levels")
+
+# def level3(event):
+#     canvas.create_image(1, 0, image=level3_bg, anchor="nw")
+#     canvas.create_image(25, 10, image=back_img, anchor="nw", tags="back_all_levels")
 
 
 
