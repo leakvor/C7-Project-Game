@@ -128,3 +128,11 @@ root.mainloop()
 
 
 
+
+
+
+
+
+
+
+canvas.create_rectangle(100,10,500,100)
