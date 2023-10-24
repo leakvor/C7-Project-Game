@@ -58,7 +58,7 @@ all_level_bg= PhotoImage(file="image/all-levels.png")
 
 #=========================== ALL LEVELS =======================
 
-def level1(event):
+def level01(event):
     canvas.delete("all")
     global player
     # =============   GRASS IMAGES =========
